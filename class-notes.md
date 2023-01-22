@@ -174,3 +174,10 @@ render
 componentDidUpdate
  
 componentWillUnmount
+
+
+
+componentDidMount - Called Only once in a component
+componentDidUpdate - Called when the state is updated 
+
+If there is no state, there will be no componentDidUpdate 

@@ -15,7 +15,6 @@ const Body = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(()=>{
-   
     getRestaurants();
   },[]);
 
@@ -42,8 +41,7 @@ const Body = () => {
     }
   } else {
       if(errorMsg) setErrorMsg('');
-      
-      setAllRestaurants(allRestaurants);
+      setFilteredRestaurants(allRestaurants);
     }
   }
 
@@ -51,7 +49,6 @@ const Body = () => {
 
 // Don't render component (Early return)
 if (!allRestaurants) {
- 
   return null;
 }
 return (

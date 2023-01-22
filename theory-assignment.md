@@ -14,11 +14,11 @@
 
 ### 4. Why do we use componentDidMount?
 
-### 5. Why do we use componentDidMount?
+### 5.  Why do we use componentWillUnmount? Show with example
 
-### 6. Why do we use componentWillUnmount? Show with example
+### 6. (Research) Why do we use super(props) in constructor?
 
-### 7. (Research) Why do we use super(props) in constructor?
+### 7. (Research) Why can't we have the callback function of useEffect async?
 
-### 8. (Research) Why can't we have the callback function of useEffect async?
+
 
