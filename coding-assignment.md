@@ -55,7 +55,7 @@ About
 
 <ins> Order of their execution for the above nested component hierarchy is as follows : </ins>
 
-
+```
 About - constructor
 About - render 
   Profile - constructor
@@ -86,6 +86,7 @@ About - componentWillUnmount
   Blog - componentWillUnmount
     Repo - componentWillUnmount (10 times)
   
+```
 
 ![Life Cycle](/assets/images/lifecycle.jpg?raw=true)
 
