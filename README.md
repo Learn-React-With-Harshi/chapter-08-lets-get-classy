@@ -9,7 +9,7 @@ Definitely this chapter deserves two lines :
 
 Two lines about this chapter : 
 
-`There are 2 types of data in a component, one is coming from parent through props and accessed using this.props and another is local state that is created in constructor() and accessed using this.state and modified using this.setState()`
+`There are 2 types of data in a component, one is coming from parent through props and accessed using this.props and another is local state within the component that is created in constructor() and accessed using this.state and modified using this.setState()`
 
 
 `Whenever a component is called, first constructor() is called, followed by render(), if any children are present in render(), then those children's constructor & render() method is called, after which componentDidMount() of children (in order) is called before parent's componentDidMount, followed by componentDidUpdate() and componentWillUnmount of children followed by parent`
