@@ -1,8 +1,8 @@
 import React from 'react';
 import { FiUsers } from "react-icons/fi";
 import { RiGitRepositoryLine } from "react-icons/ri";
-import {Link} from 'react-router-dom';
 import Repo from './RepoClass';
+import { GITHUB_GET_USER } from '../config';
 class Blog extends React.Component {
   constructor(props){
     super(props);
@@ -14,16 +14,14 @@ class Blog extends React.Component {
       repoList : []
     }
     console.log("Blog Component - constructor with props : ", this.props.name, " from parent and state : ", this.state, " from this component");
-
-    
   }
 
   async componentDidMount() {
     console.log("Blog Component - componentDidMount", this.props.name);
-    const response = await fetch (`https://api.github.com/users/${this.props.name}`);
+    const response = await fetch (GITHUB_GET_USER + this.props.name);
     const blog_user_data = await response.json();
   
-    const repo_data = await fetch (`https://api.github.com/users/${this.props.name}/repos`);
+    const repo_data = await fetch (GITHUB_GET_USER + this.props.name + "/repos");
     const repo_list_data = await repo_data.json();
 
     this.setState({
